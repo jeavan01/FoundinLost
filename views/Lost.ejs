@@ -1,0 +1,103 @@
+<h1 class="mt-4" style="color:white; text-align: center;" >Find the Lost</h1>
+<br></br>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
+<body style="background-color:#171717;">
+    <br></br>
+    <div class="topnav" style=" background-color: #000000; overflow: hidden;">
+        <a class="active" href="dashboard" onmouseover="style.background='#ddd'" onmouseout="style.background='#000000'" style="font-family: 'Open Sans', sans-serif; float: left; color: #f2f2f2; text-align: center; padding: 14px 150.5px; text-decoration: none; font-size: 17px;">Home</a>
+        <a href="Lost" onmouseover="style.background='#ddd'" onmouseout="style.background='#000000'" style="font-family: 'Open Sans', sans-serif; float: left; color: #f2f2f2; text-align: center; padding: 14px 150.5px; text-decoration: none; font-size: 17px;">Lost Property</a>
+        <a href="Contact" onmouseover="style.background='#ddd'" onmouseout="style.background='#000000'" style="font-family: 'Open Sans', sans-serif; float: left; color: #f2f2f2; text-align: center; padding: 14px 150.5px; text-decoration: none; font-size: 17px;">Contact</a>
+      </div>
+<h1 class="mt-4" style="color:white; text-align: center; font-size: 30px;" >Lost Property Form</h1>
+<div style="color:white; text-align: center;">
+  <p>The purpose of this form is to give full descriptions the lost items so that the can be returned to its right full owner.</p>
+    <p>To submit this form you will have to fill in all the boxes. </p>
+    <p>It is also important that the descriptions are clear and etailed so that they can be matched with the right item or request.</p>
+  </div>
+<form action="/Lost" method="POST">
+  <div class="form-group">
+    <label for="name" style="color:white;">Name</label>
+    <input
+      type="name"
+      id="name"
+      name="name"
+      class="form-control"
+      placeholder="Enter Name"
+      value="<% typeof name != 'undefined' ? name : '' %>"
+    />
+  </div>
+  <div class="form-group">
+    <label for="email" style="color:white;">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="form-control"
+      placeholder="Enter Email"
+      value="<% typeof email != 'undefined' ? email : '' %>"
+    />
+  </div>
+  <div class="form-group">
+    <label for="Text" style="color:white;">Found item or Request item</label>
+    <input
+      type="Text"
+      id="Text"
+      name="Text"
+      class="form-control"
+      placeholder= "Found item or Request item"
+      value="<% typeof Text != 'undefined' ? Text : '' %>"
+    />
+  </div>
+  <div class="form-group">
+    <label for="text" style="color:white;">Item Description</label>
+    <input
+      type="text"
+      id="text"
+      name="text"
+      class="form-control"
+      placeholder="Enter Description"
+      value="<% typeof text != 'undefined' ? text : '' %>"
+    />
+  </div>
+  <div class="form-group">
+    <label for="date" style="color:white;">When was the item found/lost?</label>
+    <input
+      type="date"
+      id="date"
+      name="date"
+      class="form-control"
+      placeholder="Enter Date"
+      value="<% typeof date != 'undefined' ? date : '' %>"
+    />
+  </div>
+  <div class="form-group">
+    <label for="location" style="color:white;">Where was the item found/lost?</label>
+    <input
+      type="location"
+      id="location"
+      name="location"
+      class="form-control"
+      placeholder="Enter Location"
+      value="<% typeof location != 'undefined' ? location : '' %>"
+    />
+  </div>
+  <div class="form-group">
+    <label for="Colour" style="color:white;">Colour</label>
+    <input
+      type="Colour"
+      id="Colour"
+      name="Colour"
+      class="form-control"
+      placeholder= "Enter Colour"
+      value="<% typeof Colour != 'undefined' ? Colour : '' %>"
+    />
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-block">
+    Submit
+  </button>
+</form>
+</div>
+</div>
+</div>
+</body>
